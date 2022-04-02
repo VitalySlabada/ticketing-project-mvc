@@ -1,12 +1,12 @@
 package com.cydeo.enums;
 
-public enum Gender {
+public enum Status {
 
-    MALE("Male"), FEMALE("Female");
+    OPEN("Open"), IN_PROGRESS("In Progress"), COMPLETE("Completed");
 
     private final String value;
 
-    Gender(String value) {
+    private Status(String value) {
         this.value = value;
     }
 

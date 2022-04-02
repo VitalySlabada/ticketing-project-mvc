@@ -1,11 +1,9 @@
 package com.cydeo.dto;
 
 import com.cydeo.enums.Gender;
-import com.cydeo.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 
 @NoArgsConstructor
 @AllArgsConstructor

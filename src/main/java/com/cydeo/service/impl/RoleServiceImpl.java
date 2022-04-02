@@ -6,9 +6,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
 @Service
-public class RoleServiceImpl  extends AbstractMapService <RoleDTO, Long> implements RoleService {
+public class RoleServiceImpl extends AbstractMapService<RoleDTO, Long> implements RoleService {
 
     @Override
     public RoleDTO save(RoleDTO object) {
@@ -23,7 +22,11 @@ public class RoleServiceImpl  extends AbstractMapService <RoleDTO, Long> impleme
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
 
+    @Override
+    public void update(RoleDTO object) {
+        super.update(object.getId(), object);
     }
 
 
@@ -31,4 +34,5 @@ public class RoleServiceImpl  extends AbstractMapService <RoleDTO, Long> impleme
     public RoleDTO findById(Long id) {
         return super.findById(id);
     }
+
 }
