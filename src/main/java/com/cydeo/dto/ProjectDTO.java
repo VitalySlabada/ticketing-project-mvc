@@ -25,6 +25,7 @@ public class ProjectDTO {
 
     private String projectDetail;
     private Status projectStatus;
+
     private int completeTaskCounts;
     private int unfinishedTaskCounts;
 
@@ -37,5 +38,4 @@ public class ProjectDTO {
         this.projectDetail = projectDetail;
         this.projectStatus = projectStatus;
     }
-
 }
